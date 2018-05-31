@@ -6,6 +6,10 @@
 #
 # Control script for MySQL "Seconds behind master" of BI Amazon's database
 #
+# Aquest script es troba al cron del nagios, i executa cada 2 hores una consulta per veure si tenim lag i/o
+# errors a una bbdd que els companys de BI tenen a Amazon. Si tenim lag i/o errors ens envïa un mail als 
+# sysadmins per tal que actúem.
+#
 #####
 
 #!/bin/bash

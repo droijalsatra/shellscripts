@@ -1,5 +1,15 @@
-#!/bin/bash
+#####
+#
+# Data: 20180530
+# Author: Daniel Roijals
+# E-mail: daniel.roijals@atrapalo.com
+#
 # Control script for MySQL "Seconds behind master" of BI Amazon's database
+#
+#####
+
+#!/bin/bash
+
 # Variables definition
 HOST=bbdd5.ctcv0u4fmknr.eu-west-1.rds.amazonaws.com
 PORT=3306

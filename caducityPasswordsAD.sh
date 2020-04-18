@@ -16,7 +16,7 @@ function shouldSendEmail {
         # Minus -11644473600 is mandatory in order to convert Windows NTtime (from AD) to Unix time (to this bash script)
 
         DAYS_TO_EXPIRE=$(( $PASSWORD_MAX_DAYS - (($TODAY - $LastSet) / (60*60*24)) ))
-        for rememberDay in ${PASSWORD_REMEMBER_DAYS}; do
+        for rememberDay in ${PASSWORD_REMEMBER_DAYS[@]}; do
            if [[ ${DAYS_TO_EXPIRE} -eq ${rememberDay} ]]; then
            return 0
            fi
